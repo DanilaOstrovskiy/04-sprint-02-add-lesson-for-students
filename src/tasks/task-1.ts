@@ -8,5 +8,7 @@ const getLastItem = (array: any[]) => {
 const item1 = getLastItem(['react', 'typescript'])
 const item2 = getLastItem([1, 2])
 
+// @ts-ignore
 type test1 = [Expect<Equal<typeof item1, string>>]
+// @ts-ignore
 type test2 = [Expect<Equal<typeof item2, number>>]
